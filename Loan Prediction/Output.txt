@@ -1,0 +1,355 @@
+  Loan_ID Gender Married  ... Credit_History Property_Area Loan_Status
+0  LP001002   Male      No  ...            1.0         Urban           Y
+1  LP001003   Male     Yes  ...            1.0         Rural           N
+2  LP001005   Male     Yes  ...            1.0         Urban           Y
+3  LP001006   Male     Yes  ...            1.0         Urban           Y
+4  LP001008   Male      No  ...            1.0         Urban           Y
+
+[5 rows x 13 columns]
+       ApplicantIncome  CoapplicantIncome  ...  Loan_Amount_Term  Credit_History
+count       614.000000         614.000000  ...         600.00000      564.000000
+mean       5403.459283        1621.245798  ...         342.00000        0.842199
+std        6109.041673        2926.248369  ...          65.12041        0.364878
+min         150.000000           0.000000  ...          12.00000        0.000000
+25%        2877.500000           0.000000  ...         360.00000        1.000000
+50%        3812.500000        1188.500000  ...         360.00000        1.000000
+75%        5795.000000        2297.250000  ...         360.00000        1.000000
+max       81000.000000       41667.000000  ...         480.00000        1.000000
+
+[8 rows x 5 columns]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 614 entries, 0 to 613
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype
+---  ------             --------------  -----
+ 0   Loan_ID            614 non-null    object
+ 1   Gender             601 non-null    object
+ 2   Married            611 non-null    object
+ 3   Dependents         599 non-null    object
+ 4   Education          614 non-null    object
+ 5   Self_Employed      582 non-null    object
+ 6   ApplicantIncome    614 non-null    int64
+ 7   CoapplicantIncome  614 non-null    float64
+ 8   LoanAmount         592 non-null    float64
+ 9   Loan_Amount_Term   600 non-null    float64
+ 10  Credit_History     564 non-null    float64
+ 11  Property_Area      614 non-null    object
+ 12  Loan_Status        614 non-null    object
+dtypes: float64(4), int64(1), object(8)
+memory usage: 43.2+ KB
+None
+                   Loan_ID  Gender  ...  Property_Area  Loan_Status
+Loan_ID                  0       0  ...              0            0
+Gender                  13      13  ...             13           13
+Married                  3       3  ...              3            3
+Dependents              15      15  ...             15           15
+Education                0       0  ...              0            0
+Self_Employed           32      32  ...             32           32
+ApplicantIncome          0       0  ...              0            0
+CoapplicantIncome        0       0  ...              0            0
+LoanAmount              22      22  ...             22           22
+Loan_Amount_Term        14      14  ...             14           14
+Credit_History          50      50  ...             50           50
+Property_Area            0       0  ...              0            0
+Loan_Status              0       0  ...              0            0
+
+[13 rows x 13 columns]
+Male      489
+Female    112
+Name: Gender, dtype: int64
+Male      502
+Female    112
+Name: Gender, dtype: int64
+Yes    398
+No     213
+Name: Married, dtype: int64
+Yes    401
+No     213
+Name: Married, dtype: int64
+0     345
+1     102
+2     101
+3+     51
+Name: Dependents, dtype: int64
+0     360
+1     102
+2     101
+3+     51
+Name: Dependents, dtype: int64
+No     500
+Yes     82
+Name: Self_Employed, dtype: int64
+No     532
+Yes     82
+Name: Self_Employed, dtype: int64
+120.0    20
+110.0    17
+100.0    15
+187.0    12
+160.0    12
+         ..
+570.0     1
+300.0     1
+376.0     1
+117.0     1
+311.0     1
+Name: LoanAmount, Length: 203, dtype: int64
+146.412162    22
+120.000000    20
+110.000000    17
+100.000000    15
+160.000000    12
+              ..
+570.000000     1
+300.000000     1
+376.000000     1
+117.000000     1
+311.000000     1
+Name: LoanAmount, Length: 204, dtype: int64
+360.0    512
+180.0     44
+480.0     15
+300.0     13
+84.0       4
+240.0      4
+120.0      3
+36.0       2
+60.0       2
+12.0       1
+Name: Loan_Amount_Term, dtype: int64
+360.0    526
+180.0     44
+480.0     15
+300.0     13
+84.0       4
+240.0      4
+120.0      3
+36.0       2
+60.0       2
+12.0       1
+Name: Loan_Amount_Term, dtype: int64
+1.0    475
+0.0     89
+Name: Credit_History, dtype: int64
+1.0    525
+0.0     89
+Name: Credit_History, dtype: int64
+Y    422
+N    192
+Name: Loan_Status, dtype: int64
+                   Loan_ID  Gender  ...  Property_Area  Loan_Status
+Loan_ID                  0       0  ...              0            0
+Gender                   0       0  ...              0            0
+Married                  0       0  ...              0            0
+Dependents               0       0  ...              0            0
+Education                0       0  ...              0            0
+Self_Employed            0       0  ...              0            0
+ApplicantIncome          0       0  ...              0            0
+CoapplicantIncome        0       0  ...              0            0
+LoanAmount               0       0  ...              0            0
+Loan_Amount_Term         0       0  ...              0            0
+Credit_History           0       0  ...              0            0
+Property_Area            0       0  ...              0            0
+Loan_Status              0       0  ...              0            0
+
+[13 rows x 13 columns]
+[[5.84900000e+03 0.00000000e+00 1.46412162e+02 3.60000000e+02
+  1.00000000e+00]
+ [4.58300000e+03 1.50800000e+03 1.28000000e+02 3.60000000e+02
+  1.00000000e+00]
+ [3.00000000e+03 0.00000000e+00 6.60000000e+01 3.60000000e+02
+  1.00000000e+00]
+ ...
+ [8.07200000e+03 2.40000000e+02 2.53000000e+02 3.60000000e+02
+  1.00000000e+00]
+ [7.58300000e+03 0.00000000e+00 1.87000000e+02 3.60000000e+02
+  1.00000000e+00]
+ [4.58300000e+03 0.00000000e+00 1.33000000e+02 3.60000000e+02
+  0.00000000e+00]]
+['Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N'
+ 'N' 'Y' 'N' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'N' 'N' 'Y' 'N' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'N'
+ 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'N' 'N' 'Y' 'Y' 'N' 'Y' 'Y'
+ 'Y' 'N' 'Y' 'N' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'N'
+ 'N' 'N' 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'N' 'Y' 'Y'
+ 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'N' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N'
+ 'Y' 'Y' 'N' 'Y' 'N' 'N' 'N' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'N'
+ 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'N' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'N' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'N' 'Y'
+ 'N' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N'
+ 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y'
+ 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'N' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'N'
+ 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'Y'
+ 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y'
+ 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'N' 'Y' 'N' 'N' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'Y'
+ 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'N']
+    Loan_ID Gender Married  ... Loan_Amount_Term Credit_History Property_Area
+0  LP001015   Male     Yes  ...            360.0            1.0         Urban
+1  LP001022   Male     Yes  ...            360.0            1.0         Urban
+2  LP001031   Male     Yes  ...            360.0            1.0         Urban
+3  LP001035   Male     Yes  ...            360.0            NaN         Urban
+4  LP001051   Male      No  ...            360.0            1.0         Urban
+
+[5 rows x 12 columns]
+                   Loan_ID  Gender  ...  Credit_History  Property_Area
+Loan_ID                  0       0  ...               0              0
+Gender                  11      11  ...              11             11
+Married                  0       0  ...               0              0
+Dependents              10      10  ...              10             10
+Education                0       0  ...               0              0
+Self_Employed           23      23  ...              23             23
+ApplicantIncome          0       0  ...               0              0
+CoapplicantIncome        0       0  ...               0              0
+LoanAmount               5       5  ...               5              5
+Loan_Amount_Term         6       6  ...               6              6
+Credit_History          29      29  ...              29             29
+Property_Area            0       0  ...               0              0
+
+[12 rows x 12 columns]
+Male      286
+Female     70
+Name: Gender, dtype: int64
+Male      297
+Female     70
+Name: Gender, dtype: int64
+Yes    233
+No     134
+Name: Married, dtype: int64
+Yes    233
+No     134
+Name: Married, dtype: int64
+0     200
+2      59
+1      58
+3+     40
+Name: Dependents, dtype: int64
+0     210
+2      59
+1      58
+3+     40
+Name: Dependents, dtype: int64
+No     307
+Yes     37
+Name: Self_Employed, dtype: int64
+No     330
+Yes     37
+Name: Self_Employed, dtype: int64
+150.0    12
+125.0    11
+110.0    10
+100.0     9
+90.0      9
+         ..
+186.0     1
+163.0     1
+360.0     1
+77.0      1
+297.0     1
+Name: LoanAmount, Length: 144, dtype: int64
+150.0    12
+125.0    11
+110.0    10
+100.0     9
+90.0      9
+         ..
+225.0     1
+103.0     1
+153.0     1
+199.0     1
+71.0      1
+Name: LoanAmount, Length: 145, dtype: int64
+360.0    311
+180.0     22
+480.0      8
+300.0      7
+240.0      4
+84.0       3
+6.0        1
+120.0      1
+36.0       1
+350.0      1
+12.0       1
+60.0       1
+Name: Loan_Amount_Term, dtype: int64
+360.0    317
+180.0     22
+480.0      8
+300.0      7
+240.0      4
+84.0       3
+6.0        1
+120.0      1
+36.0       1
+350.0      1
+12.0       1
+60.0       1
+Name: Loan_Amount_Term, dtype: int64
+1.0    279
+0.0     59
+Name: Credit_History, dtype: int64
+1.0    308
+0.0     59
+Name: Credit_History, dtype: int64
+                   Loan_ID  Gender  ...  Credit_History  Property_Area
+Loan_ID                  0       0  ...               0              0
+Gender                   0       0  ...               0              0
+Married                  0       0  ...               0              0
+Dependents               0       0  ...               0              0
+Education                0       0  ...               0              0
+Self_Employed            0       0  ...               0              0
+ApplicantIncome          0       0  ...               0              0
+CoapplicantIncome        0       0  ...               0              0
+LoanAmount               0       0  ...               0              0
+Loan_Amount_Term         0       0  ...               0              0
+Credit_History           0       0  ...               0              0
+Property_Area            0       0  ...               0              0
+
+[12 rows x 12 columns]
+[[5.720e+03 0.000e+00 1.100e+02 3.600e+02 1.000e+00]
+ [3.076e+03 1.500e+03 1.260e+02 3.600e+02 1.000e+00]
+ [5.000e+03 1.800e+03 2.080e+02 3.600e+02 1.000e+00]
+ ...
+ [3.250e+03 1.993e+03 1.260e+02 3.600e+02 1.000e+00]
+ [5.000e+03 2.393e+03 1.580e+02 3.600e+02 1.000e+00]
+ [9.200e+03 0.000e+00 9.800e+01 1.800e+02 1.000e+00]]
+['Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'N' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'N' 'N' 'Y' 'N' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'N' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N'
+ 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'N' 'Y'
+ 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'N' 'Y'
+ 'Y' 'Y' 'Y' 'N' 'N' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'N' 'Y' 'Y' 'Y' 'Y' 'Y'
+ 'Y' 'Y' 'Y' 'Y' 'Y' 'Y' 'Y']
+
+Process finished with exit code 0
