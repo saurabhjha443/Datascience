@@ -1,2 +1,2 @@
 # Datascience
-Data Science Projects from beginner level to Advanced. 
+Data Science Projects and Hackathons. 
